@@ -31,3 +31,8 @@ input {
 	-webkit-appearance: none;
 	-moz-appearance: none;
 }
+
+input:checked {
+	border: .6vw solid #344010;
+	background-color: rgba(2,200,230, .8);
+}
