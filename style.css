@@ -8,6 +8,16 @@ html {
 	background-color: #1C2100;
 }
 
+h2 {
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	font-family: 'Helvetica';
+	font-weight: 500;
+	color: #fefefe;
+	transform: translate(-50%, -50%);
+}
+
 div {
 	position: absolute;
 	top: 50%;
@@ -20,12 +30,12 @@ input {
 	top: 4px;
 	appearance: none;
 	border-radius: 50%;
-	width: 2vw;
-	height: 2vw;
-	border: 0.1vw solid rgba(2,100,230, .6);
+	width: 80px;
+	height: 80px;
+	border: 10px solid rgba(2,100,230, .6);
 	background-color: #344056;
 	transition: .2s all linear;
-	margin-right: 12px;
+	margin-right: 20px;
 	transition: all .2s ease-in-out;
 	cursor: pointer;
 	-webkit-appearance: none;
@@ -33,6 +43,21 @@ input {
 }
 
 input:checked {
-	border: .6vw solid #344010;
+	border: 10px solid #344010;
 	background-color: rgba(2,200,230, .8);
+}
+
+@media (max-width: 767px){
+
+	input {
+		width: 40px;
+		height: 40px;
+		margin-right: 3px;
+	}
+
+	input:checked {
+		border: 6px solid #344010;
+		background-color: rgba(2,200,230, .8);
+	}
+	
 }
